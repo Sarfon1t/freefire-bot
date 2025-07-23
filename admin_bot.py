@@ -5,6 +5,7 @@ from telegram.ext import ApplicationBuilder, MessageHandler, ContextTypes, filte
 # Получаем переменные из окружения
 ADMIN_BOT_TOKEN = os.getenv("ADMIN_BOT_TOKEN")
 print("Admin bot token loaded")
+
 async def forward_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if update.message.text and update.message.text.startswith("/done"):
         parts = update.message.text.split()
