@@ -10,7 +10,7 @@ async def forward_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
             tg_id = int(update.message.text.split()[1])
             await context.bot.send_message(
                 chat_id=tg_id,
-                text="🎁 Алмазы отправлены! Спасибо за покупку!
+                text="🎁 Алмазы отправлены! Спасибо за покупку!"
 
 /Rate — чтобы оценить наш бот"
             )
